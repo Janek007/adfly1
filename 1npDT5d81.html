@@ -1,7 +1,35 @@
-<!doctype html>
-<html lang="de">
-  <head><a href="http://www.google.de/" target="_blank">Google</a>
-  </head>
-  <body>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.surfbar {
+  width: 100%;
+  height: 10000px;
+}
+</style>
+</head>
+<body>
+<iframe class="surfbar" id="surfbar"></iframe>
+<script>
+var websites = [
+  "https://amzn.to/3YhMusZ",
+
+];
+
+var currentSite = Math.floor(Math.random() * websites.length);
+var randomNum = Math.floor(100000 + Math.random() * 900000);
+
+function rotateSites() {
+  document.getElementById("surfbar").src = websites[currentSite];
+  currentSite = (currentSite + 1) % websites.length;
+}
+
+setInterval(rotateSites, 100);
+
+setTimeout(function() {
+    window.location.href = "
+split.to/oxa88R6";
+  }, 14500);
+</script>
+</body>
 </html>
